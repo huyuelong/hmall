@@ -340,3 +340,30 @@
 00:26:56:646  INFO 27868 --- [nacos-grpc-client-executor-413] com.alibaba.nacos.common.remote.client   : [e61e7424-2564-45ec-9861-51a2cad80245] Ack server push request, request = NotifySubscriberRequest, requestId = 21
 00:26:56:656  INFO 26316 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [22a2f5fc-4e91-4ce5-90a7-499686f911d6] Ack server push request, request = NotifySubscriberRequest, requestId = 19
 00:26:56:691  INFO 26316 --- [main] com.hmall.item.ItemApplication           : Started ItemApplication in 6.908 seconds (JVM running for 7.838)
+02:57:14:082  WARN 27868 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h12m52s603ms105µs900ns).
+02:57:14:577  INFO 27868 --- [nacos-grpc-client-executor-629] com.alibaba.nacos.common.remote.client   : [e61e7424-2564-45ec-9861-51a2cad80245] Receive server push request, request = ClientDetectionRequest, requestId = 23
+02:57:14:578  INFO 27868 --- [nacos-grpc-client-executor-629] com.alibaba.nacos.common.remote.client   : [e61e7424-2564-45ec-9861-51a2cad80245] Ack server push request, request = ClientDetectionRequest, requestId = 23
+02:57:14:574  INFO 26316 --- [nacos-grpc-client-executor-224] com.alibaba.nacos.common.remote.client   : [22a2f5fc-4e91-4ce5-90a7-499686f911d6] Receive server push request, request = ClientDetectionRequest, requestId = 22
+02:57:14:596  INFO 26316 --- [nacos-grpc-client-executor-224] com.alibaba.nacos.common.remote.client   : [22a2f5fc-4e91-4ce5-90a7-499686f911d6] Ack server push request, request = ClientDetectionRequest, requestId = 22
+09:16:57:152  INFO 27868 --- [nacos-grpc-client-executor-633] com.alibaba.nacos.common.remote.client   : [e61e7424-2564-45ec-9861-51a2cad80245] Receive server push request, request = ClientDetectionRequest, requestId = 26
+09:16:57:152  INFO 27868 --- [nacos-grpc-client-executor-633] com.alibaba.nacos.common.remote.client   : [e61e7424-2564-45ec-9861-51a2cad80245] Ack server push request, request = ClientDetectionRequest, requestId = 26
+09:16:57:155  INFO 26316 --- [nacos-grpc-client-executor-228] com.alibaba.nacos.common.remote.client   : [22a2f5fc-4e91-4ce5-90a7-499686f911d6] Receive server push request, request = ClientDetectionRequest, requestId = 24
+09:16:57:156  INFO 26316 --- [nacos-grpc-client-executor-228] com.alibaba.nacos.common.remote.client   : [22a2f5fc-4e91-4ce5-90a7-499686f911d6] Ack server push request, request = ClientDetectionRequest, requestId = 24
+09:17:08:571  WARN 27868 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h19m54s492ms988µs400ns).
+11:52:47:084  INFO 26316 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:52:47:088  INFO 26316 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+11:52:47:122  INFO 26316 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 34 ms
+11:52:47:395  INFO 26316 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+11:52:47:964  INFO 26316 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+11:52:47:971 DEBUG 26316 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+11:52:47:995 DEBUG 26316 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
+11:52:48:032 DEBUG 26316 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+12:01:04:787 DEBUG 26316 --- [http-nio-8081-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+12:01:04:792 DEBUG 26316 --- [http-nio-8081-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
+12:01:04:797 DEBUG 26316 --- [http-nio-8081-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+12:32:17:982 DEBUG 27868 --- [http-nio-8083-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+12:32:17:992 DEBUG 27868 --- [http-nio-8083-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
+12:32:18:006 DEBUG 27868 --- [http-nio-8083-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+12:32:23:240 DEBUG 26316 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+12:32:23:246 DEBUG 26316 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 100000006163(Long)
+12:32:23:253 DEBUG 26316 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
