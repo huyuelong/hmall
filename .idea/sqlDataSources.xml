@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="67be2494-8326-4174-b5b6-c8ea70cc2e8f" name="@localhost Mapping">
+      <data-sources db="3426d840-c24c-48ec-bbd9-fbb7f7386ac6" />
+      <scope>
+        <node kind="schema">
+          <name qname="hm-cart" />
+          <name qname="hm-item" />
+          <name qname="hm-pay" />
+          <name qname="hm-trade" />
+          <name qname="hm-user" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+</project>
