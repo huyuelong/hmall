@@ -1,57 +1,17 @@
-22:30:04:818  INFO 25824 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-22:30:04:840  INFO 25824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-22:30:04:882  INFO 25824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 41 ms
-22:30:05:387  INFO 25824 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-22:30:05:970  INFO 25824 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-22:30:05:981 DEBUG 25824 --- [http-nio-8080-exec-1] com.hmall.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
-22:30:06:008 DEBUG 25824 --- [http-nio-8080-exec-1] com.hmall.mapper.UserMapper.selectOne    : ==> Parameters: jack(String)
-22:30:06:103 DEBUG 25824 --- [http-nio-8080-exec-1] com.hmall.mapper.UserMapper.selectOne    : <==      Total: 1
-22:30:38:842  INFO 25824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-22:30:38:858  INFO 25824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-22:30:44:787  INFO 16756 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 11.0.26 on LAPTOP-D7SMN0OH with PID 16756 (C:\Users\94991\Desktop\hmall\hm-service\target\classes started by 94991 in C:\Users\94991\Desktop\hmall)
-22:30:44:788 DEBUG 16756 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
-22:30:44:788  INFO 16756 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "dev"
-22:30:45:712  INFO 16756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-22:30:45:717  INFO 16756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-22:30:45:764  INFO 16756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
-22:30:46:490  INFO 16756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-22:30:46:499  INFO 16756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-22:30:46:499  INFO 16756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-22:30:46:659  INFO 16756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-22:30:46:660  INFO 16756 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1824 ms
-22:30:49:709  INFO 16756 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-22:30:50:268  INFO 16756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-22:30:50:269  INFO 16756 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-22:30:50:272  INFO 16756 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-22:30:50:313  INFO 16756 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-22:30:50:548  INFO 16756 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 6.209 seconds (JVM running for 10.108)
-22:31:16:492  INFO 16756 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-22:31:16:494  INFO 16756 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-22:31:16:495  INFO 16756 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-22:31:16:645  INFO 16756 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-22:31:16:912  INFO 16756 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-22:31:16:919 DEBUG 16756 --- [http-nio-8080-exec-1] com.hmall.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
-22:31:16:934 DEBUG 16756 --- [http-nio-8080-exec-1] com.hmall.mapper.UserMapper.selectOne    : ==> Parameters: jack(String)
-22:31:16:953 DEBUG 16756 --- [http-nio-8080-exec-1] com.hmall.mapper.UserMapper.selectOne    : <==      Total: 1
-22:31:17:257 DEBUG 16756 --- [http-nio-8080-exec-2] com.hmall.mapper.CartMapper.selectList   : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-22:31:17:258 DEBUG 16756 --- [http-nio-8080-exec-2] com.hmall.mapper.CartMapper.selectList   : ==> Parameters: 1(Long)
-22:31:17:289 DEBUG 16756 --- [http-nio-8080-exec-2] com.hmall.mapper.CartMapper.selectList   : <==      Total: 0
-22:32:14:118  INFO 16756 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-22:32:14:129  INFO 16756 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-23:20:52:529  INFO 36160 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 11.0.26 on LAPTOP-D7SMN0OH with PID 36160 (C:\Users\94991\Desktop\hmall\hm-service\target\classes started by 94991 in C:\Users\94991\Desktop\hmall)
-23:20:52:530 DEBUG 36160 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
-23:20:52:532  INFO 36160 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "dev"
-23:20:53:381  INFO 36160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-23:20:53:384  INFO 36160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-23:20:53:421  INFO 36160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
-23:20:54:072  INFO 36160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-23:20:54:083  INFO 36160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-23:20:54:084  INFO 36160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-23:20:54:279  INFO 36160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-23:20:54:279  INFO 36160 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1702 ms
-23:20:57:141  INFO 36160 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-23:20:57:590  INFO 36160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-23:20:57:591  INFO 36160 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-23:20:57:595  INFO 36160 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-23:20:57:636  INFO 36160 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-23:20:57:915  INFO 36160 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 5.782 seconds (JVM running for 7.468)
+22:06:45:363  INFO 34824 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 11.0.26 on LAPTOP-D7SMN0OH with PID 34824 (C:\Users\94991\Desktop\hmall\hm-service\target\classes started by 94991 in C:\Users\94991\Desktop\hmall)
+22:06:45:375 DEBUG 34824 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
+22:06:45:377  INFO 34824 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "dev"
+22:06:47:603  INFO 34824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+22:06:47:611  INFO 34824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:06:47:716  INFO 34824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 0 Redis repository interfaces.
+22:06:49:145  INFO 34824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+22:06:49:164  INFO 34824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:06:49:164  INFO 34824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+22:06:49:551  INFO 34824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:06:49:553  INFO 34824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4090 ms
+22:06:55:790  INFO 34824 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+22:06:56:774  INFO 34824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+22:06:56:777  INFO 34824 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+22:06:56:783  INFO 34824 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+22:06:56:852  INFO 34824 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+22:06:57:330  INFO 34824 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 12.839 seconds (JVM running for 16.737)
